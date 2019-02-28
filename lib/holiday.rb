@@ -55,8 +55,9 @@ def all_holidays_with_bbq(holiday_hash)
 holiday_hash.each do |key, value|
   value.each do |attribute, data|
     if data.include?("BBQ")
-      return newArray << attribute
+      newArray << attribute
     end
   end
 end
+newArray
 end
